@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <script src="./index.cjs"defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>Task Tracker</h1>
+        <p class="subtitle">Stay organized and get things done!</p>
+
+        <!-- Add Task -->
+        <div class="add-task">
+            <input id = "dec"
+                type="text"
+                placeholder="Enter a new task..."
+            >
+
+            <button id="add">Add</button>
+        </div>
+
+        <!-- Tasks -->
+        <div class="tasks">
+
+            <!-- Pending Task -->
+            <div class="task">
+                <input type="checkbox">
+
+                <span>Read a book</span>
+
+                <div class="actions">
+                    <button class="complete">✓</button>
+                    <button class="delete">🗑</button>
+                </div>
+            </div>
+
+            <div class="task">
+                <input type="checkbox">
+
+                <span>Learn JavaScript</span>
+
+                <div class="actions">
+                    <button class="complete">✓</button>
+                    <button class="delete">🗑</button>
+                </div>
+            </div>
+
+            <div class="task">
+                <input type="checkbox">
+
+                <span>Build a project</span>
+
+                <div class="actions">
+                    <button class="complete">✓</button>
+                    <button class="delete">🗑</button>
+                </div>
+            </div>
+
+            <!-- Completed Task -->
+            <div class="task completed">
+                <input type="checkbox" checked>
+
+                <span>Go to the gym</span>
+
+                <div class="actions">
+                    <button class="uncomplete">↩</button>
+                    <button class="delete">🗑</button>
+                </div>
+            </div>
+
+            <div class="task completed">
+                <input type="checkbox" checked>
+
+                <span>Plan for the weekend</span>
+
+                <div class="actions">
+                    <button class="uncomplete">↩</button>
+                    <button class="delete">🗑</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
